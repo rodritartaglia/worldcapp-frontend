@@ -1,0 +1,84 @@
+.card {
+    height: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card span {
+    font-weight: 800;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: var(--secondaryColor) 3px solid;
+    border-radius: 1rem;
+}
+
+.cardTitle {
+    display: flex;
+    background-color: var(--tertiaryColor);
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 14px 14px 0 0;
+}
+
+.cardTitle h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.65rem;
+}
+
+.cardTitle i::before {
+    font-size: 1.5rem;
+    width: auto;
+    color: white;
+    vertical-align: middle;
+}
+
+.locationText {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.stockText {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stockText div {
+    border-right: 1px solid rgb(154, 154, 154, 0.75);
+    width: 50%;
+    padding: 1rem;
+}
+
+.stockText>span {
+    align-self: center;
+    width: 50%;
+    text-align: center;
+}
+
+.priceText {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.priceText span {
+    color: var(--primaryColor);
+    margin-left: 5px;
+}

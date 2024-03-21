@@ -1,0 +1,7 @@
+<div class="baseContainer">
+    <div class="addCard" [routerLink]="['/main/agregarFigurita', type]">
+        <i class="fi fi-rr-add"></i>
+    </div>
+    <app-figurita (activateModalEvent)="activateModal($event)" [eliminable]="true" *ngFor="let figurita of list" [figuritaDTO]="figurita"></app-figurita>
+</div>
+<app-delete-modal [type]="type" [id]="modalFiguritaId" (deactivateModalEvent)="deactivateModal()" *ngIf="modalState" ></app-delete-modal>

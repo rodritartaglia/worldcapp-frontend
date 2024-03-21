@@ -1,0 +1,270 @@
+@import 'ngx-toastr/toastr';
+
+// @import 'ngx-toastr/toastr-bs4-alert';
+
+:root {
+    --primaryColor: #FFF;
+    --altPrimaryColor: #bbb;
+    --secondaryColor: #50AEE2;
+    --altSecondaryColor: #006BC8;
+    --tertiaryColor: #e9be00;
+    --altTertiaryColor: #b4950a;
+    --primaryFontColor: black;
+    --bar-height: 75px;
+    --input-height: 40px; /* for now */
+    --max-width-mobile: 400px;
+    --min-width-tablet: 401px;
+    --max-width-tablet: 768px;
+    --min-width-desktop: 769px;
+    --spiky-corners: 1rem 5px 1rem 5px;
+}   
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'El Messiri', sans-serif;
+background-color: #e6e6e6;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Rowdies', cursive;
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-layout > main {
+    flex-grow: 1;
+}
+
+.asideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-color: var(--secondaryColor);
+    gap: 10px;
+    border-bottom-left-radius: var(--defaultBorderRadius);
+    border-bottom-right-radius: var(--defaultBorderRadius);
+}
+
+.asideContainer label {
+    cursor: pointer;
+}
+
+.asideTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+
+.addCard {
+    position: fixed;
+    background-color: var(--secondaryColor);
+    bottom: 10px;
+    right: 10px;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.addCard i::before {
+    text-align: center;
+    vertical-align: middle;
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+}
+
+.baseContainer {
+    //color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex: auto;
+}
+
+.baseContainer input, select{
+    padding: 0.30rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--secondaryColor);
+    width: 100%;
+}
+
+.baseContainer h2{
+    padding: 1rem;
+}
+
+.cardGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    flex: 1;
+    margin: 20px;
+    gap: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    border: 1px solid var(--altSecondaryColor);
+    border-radius: var(--spiky-corners);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+}
+
+.primary-button:hover{
+    background-color: var(--altPrimaryColor);
+    border: 1px solid var(--altSecondaryColor);
+    color: var(--secondaryColor);
+}
+
+.secondary-button {
+    background-color: white;
+    color: var(--altSecondaryColor);
+}
+
+.secondary-button:hover{
+    background-color: lightgray;
+    color:white;
+}
+
+.asideTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+
+.checkboxItem input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--primaryFontColor);
+    appearance: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.checkboxItem input:hover {
+    background-color: var(--altSecondaryColor);
+}
+
+.checkboxItem input:checked {
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+
+footer{
+    height: var(--bar-height);
+    position: sticky;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--altPrimaryColor);
+    color: white;
+}
+
+footer span {
+    font-family: 'Rowdies', cursive;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    font-weight: 700; /* esto pone la negrita*/
+}
+
+footer i::before {
+    vertical-align: middle;
+    font-size: 1.15rem;
+}
+
+@media (min-width: 401px) {
+    .cardGrid {
+        gap: 30px;
+        margin: 30px;
+    }
+}
+
+
+@media (min-width: 769px) {
+    
+    aside {
+        max-width: 30rem;
+        min-width: 26rem;
+    }
+    
+    .asideContainer {
+        position: sticky;
+        top: calc(var(--bar-height) + 20px);
+        border-radius: var(--spiky-corners);
+    }
+    
+
+    .cardGrid {
+        // gap: 40px;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .baseContainer{
+        gap: 1rem;
+    }
+
+    .addCard {
+        position: static;
+        background-color: rgba(255, 255, 255, 0.3);
+        bottom: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .addCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        outline: var(--secondaryColor) 3px solid;
+        border-radius: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .addCard i::before {
+        color: var(--secondaryColor);
+        opacity: 0.5;
+        font-size: 5rem;
+    }
+
+    .addCard:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+}

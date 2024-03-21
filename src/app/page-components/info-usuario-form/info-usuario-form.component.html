@@ -1,0 +1,73 @@
+<div class="baseContainer">
+    <h2>Información General</h2>
+    <div class="inputContainer">
+        <div>
+            <label for="nombrePerfil">Nombre</label>
+            <input type="text" name="" id="nombrePerfil" [(ngModel)]="usuarioNombre">
+        </div>
+        <div>
+            <label for="apellidoPerfil">Apellido</label>
+            <input type="text" name="" id="apellidoPerfil" [(ngModel)]="usuarioApellido">
+        </div>
+    </div>
+    <div class="inputContainer">
+        <div>
+            <label for="mailPerfil">Correo Electrónico</label>
+            <input type="text" name="" id="mailPerfil" [(ngModel)]="usuarioCorreoElectronico">
+        </div>
+        <div>
+            <label for="fechaPerfil">Fecha de Nacimiento</label>
+            <input type="date" name="" id="fechaPerfil" [(ngModel)]="usuarioFechaDeNacimiento">
+        </div>
+    </div>
+    <h2>Dirección</h2>
+    <div class="inputContainer">
+        <div>
+            <label for="provincia">Provincia</label>
+            <select name="" id="provincia" [(ngModel)]="usuarioProvincia">
+                <option value="{{usuarioProvincia}}">{{usuarioProvincia}}</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="San Luis">San Luis</option>
+            </select>
+        </div>
+        <div>
+            <label for="localidad">Localidad</label>
+            <select name="" id="localidad" [(ngModel)]="usuarioLocalidad" >
+                <option value="{{usuarioLocalidad}}">{{usuarioLocalidad}}</option>
+                <option value="Cucha Cucha">Cucha Cucha</option>
+                <option value="San Martin">San Martin</option>
+                <option value="Merlo">Merlo</option>
+            </select>
+        </div>
+    </div>
+    <div class="inputContainer">
+        <div>
+            <label for="callePerfil">Calle</label>
+            <input type="text" name="" id="callePerfil" [(ngModel)]="usuarioCalle">
+        </div>
+        <div>
+            <label for="altura">Altura</label>
+            <input type="number" name="" id="altura" [(ngModel)]="usuarioAltura">
+        </div>
+    </div>
+    <h2>Criterio de Cambio</h2>
+    <div class="inputContainer">
+        <div>
+            <label for="criterio">Criterio de Cambio</label>
+            <select name="" id="criterio">
+                <option value="">Par</option>
+                <option value="">Nacionalista</option>
+                <option value="">Conservador</option>
+                <option value="">Fanatico</option>
+                <option value="">Desprendido</option>
+                <option value="">Interesado</option>
+                <option value="">Cambiante</option>
+            </select> 
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="secondary-button">Descartar</button>
+        <button class="primary-button" (click)="guardarDatos()">Guardar</button>
+    </div>
+</div>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda de Sobres</title>
+    <link rel="stylesheet" href="css/busquedaSobres.css">
+    <link rel="stylesheet" href="css/GlobalStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+</head>
+
+<body>
+    <header class="navHeader">
+        <h1>WorldCApp</h1>
+        <nav class="navbarDesktop">
+            <ul>
+                <li><a href="busquedaFiguritas.html">Figuritas</a></li>
+                <li><a href="busquedaSobres.html">Sobres</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="login.html"><i class="fi fi-rr-exit"></i></a></li>
+            </ul>
+        </nav>
+        <nav class="navbarMobile">
+            <i class="fi fi-rr-menu-burger"></i>
+        </nav>
+    </header>
+    <header class="searchBarHeader">
+        <div class="searchBar">
+            <input type="text" placeholder="Buscar">
+            <i class="fi fi-rr-search"></i>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="asideContainer">
+                <span class="asideTitle">Ordenar Por</span>
+                <div class="checkboxList">
+                    <div class="checkboxItem">
+                        <input type="radio" name="ordenarPor" id="menorDistancia">
+                        <label for="menorDistancia">Menor distancia</label>
+                    </div>
+                    <div class="checkboxItem">
+                        <input type="radio" name="ordenarPor" id="masBarato">
+                        <label for="masBarato">Más barato</label>
+                    </div>
+                    <div class="checkboxItem">
+                        <input type="radio" name="ordenarPor" id="masSobres">
+                        <label for="masSobres">Más sobres</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="cardGrid">
+            <!-- CARD -->
+            <div class="card">
+                <div class="cardTitle">
+                    <h2>Supermercado Chumbo</h2>
+                    <i class="fi fi-bs-shopping-basket"></i>
+                </div>
+                <div class="locationText">
+                    <p><span>Dirección: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><span>Ubicacion geográfica: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p><span>Distancia: </span> 3 kilómetros</p>
+                </div>
+                <hr>
+                <div class="stockText">
+                    <div>
+                        <span>Stock de Sobres: </span>
+                        <p>45 unidades</p>
+                    </div>
+                    <span>Pedidos pendientes</span>
+                </div>
+                <hr>
+                <div class="priceText">
+                    <p>Precio por sobre <span>$240</span></p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <div class="cardTitle">
+                    <h2>Librería Rodri</h2>
+                    <i class="fi fi-rr-books"></i>
+                </div>
+                <div class="locationText">
+                    <p><span>Dirección: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sequi
+                        odit totam voluptate, officia similique maxime. Eaque assumenda cumque consectetur tempora
+                        eos?
+                        Officia aliquam nostrum, expedita incidunt itaque reiciendis impedit.</p>
+                    <p><span>Ubicacion geográfica: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p><span>Distancia: </span> 3 kilómetros</p>
+                </div>
+                <hr>
+                <div class="stockText">
+                    <div>
+                        <span>Stock de Sobres: </span>
+                        <p>45 unidades</p>
+                    </div>
+                    <span>Pedidos pendientes</span>
+                </div>
+                <hr>
+                <div class="priceText">
+                    <p>Precio por sobre <span>$240</span></p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <div class="cardTitle">
+                    <h2>Kiosco el Perrito</h2>
+                    <i class="fi fi-rr-shop"></i>
+                </div>
+                <div class="locationText">
+                    <p><span>Dirección: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><span>Ubicacion geográfica: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p><span>Distancia: </span> 3 kilómetros</p>
+                </div>
+                <hr>
+                <div class="stockText">
+                    <div>
+                        <span>Stock de Sobres: </span>
+                        <p>45 unidades</p>
+                    </div>
+                    <span>Pedidos pendientes</span>
+                </div>
+                <hr>
+                <div class="priceText">
+                    <p>Precio por sobre <span>$240</span></p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <div class="cardTitle">
+                    <h2>Supermercado Chumbo</h2>
+                    <i class="fi fi-bs-shopping-basket"></i>
+                </div>
+                <div class="locationText">
+                    <p><span>Dirección: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><span>Ubicacion geográfica: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p><span>Distancia: </span> 3 kilómetros</p>
+                </div>
+                <hr>
+                <div class="stockText">
+                    <div>
+                        <span>Stock de Sobres: </span>
+                        <p>45 unidades</p>
+                    </div>
+                    <span>Pedidos pendientes</span>
+                </div>
+                <hr>
+                <div class="priceText">
+                    <p>Precio por sobre <span>$240</span></p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <div class="cardTitle">
+                    <h2>Supermercado Chumbo</h2>
+                    <i class="fi fi-bs-shopping-basket"></i>
+                </div>
+                <div class="locationText">
+                    <p><span>Dirección: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><span>Ubicacion geográfica: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p><span>Distancia: </span> 3 kilómetros</p>
+                </div>
+                <hr>
+                <div class="stockText">
+                    <div>
+                        <span>Stock de Sobres: </span>
+                        <p>45 unidades</p>
+                    </div>
+                    <span>Pedidos pendientes</span>
+                </div>
+                <hr>
+                <div class="priceText">
+                    <p>Precio por sobre <span>$240</span></p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <div class="cardTitle">
+                    <h2>Supermercado Chumbo</h2>
+                    <i class="fi fi-bs-shopping-basket"></i>
+                </div>
+                <div class="locationText">
+                    <p><span>Dirección: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><span>Ubicacion geográfica: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p><span>Distancia: </span> 3 kilómetros</p>
+                </div>
+                <hr>
+                <div class="stockText">
+                    <div>
+                        <span>Stock de Sobres: </span>
+                        <p>45 unidades</p>
+                    </div>
+                    <span>Pedidos pendientes</span>
+                </div>
+                <hr>
+                <div class="priceText">
+                    <p>Precio por sobre <span>$240</span></p>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <div class="cardTitle">
+                    <h2>Supermercado Chumbo Plus</h2>
+                    <i class="fi fi-bs-shopping-basket"></i>
+                </div>
+                <div class="locationText">
+                    <p><span>Dirección: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><span>Ubicacion geográfica: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p><span>Distancia: </span> 3 kilómetros Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis quaerat natus voluptatum quasi voluptate molestias id culpa quia aut fugit commodi libero, maiores vero expedita maxime provident dolorem asperiores.</p>
+                </div>
+                <hr>
+                <div class="stockText">
+                    <div>
+                        <span>Stock de Sobres: </span>
+                        <p>45 unidades</p>
+                    </div>
+                    <span>Pedidos pendientes</span>
+                </div>
+                <hr>
+                <div class="priceText">
+                    <p>Precio por sobre <span>$240</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <i class="fi fi-rr-copyright"></i>
+        <span>WorldCApp / 2023</span>
+    </footer>
+</body>
+
+</html>

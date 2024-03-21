@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="cardTitle">
+        <h2>{{puntoDeVenta.nombre}}</h2>
+        <i class="{{puntoDeVenta.icon}}"></i>
+    </div>
+    <div class="locationText">
+        <p><span>Dirección: </span>{{puntoDeVenta.direccion}}</p>
+        <p><span>Ubicacion geográfica: </span>{{puntoDeVenta.ubicacionGeografica}}</p>
+        <p><span>Distancia: </span>{{puntoDeVenta.distancia}}</p>
+    </div>
+    <hr>
+    <div class="stockText">
+        <div>
+            <span>Stock de Sobres: </span>
+            <p>{{puntoDeVenta.stock}}</p>
+        </div>
+        <span>Pedidos pendientes</span>
+    </div>
+    <hr>
+    <div class="priceText">
+        <p>Precio por sobre <span>{{puntoDeVenta.precioPorSobre | currency }}</span></p>
+    </div>
+</div>

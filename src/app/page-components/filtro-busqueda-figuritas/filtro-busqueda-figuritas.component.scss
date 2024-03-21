@@ -1,0 +1,84 @@
+.space-around{
+    display: flex;
+    justify-content: space-evenly;
+
+    button {
+        font-family: 'El Messiri', sans-serif;
+        font-size: 1rem;
+        background-color: var(--primaryColor);
+        border: 2px solid black;
+        color: black;
+    }
+
+    button:hover {
+        background-color: var(--altSecondaryColor);
+        border: 2px solid var(--altSecondaryColor);
+        color: white;
+    }
+
+}   
+
+.filtersList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.filtersList span {
+    text-align: center;
+}
+
+.range {
+    display: flex;
+}
+
+.range input {
+    height: 27px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.checkboxItem input {
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    vertical-align: middle;
+    border: 2px solid var(--primaryFontColor);
+    appearance: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.checkboxItem input:hover {
+    background-color: var(--altSecondaryColor);
+}
+
+.checkboxItem input:checked {
+    background-color: var(--altSecondaryColor);
+    border-color: var(--altSecondaryColor);
+}
+
+@media (min-width: 401px) {
+
+    .checkboxItem {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkboxItem label {
+        display: block;
+
+    }
+
+}

@@ -1,0 +1,69 @@
+.opcionesPerfil span:first-child {
+    color: var(--secondaryColor);
+    border-bottom: 3px solid var(--secondaryColor);
+    height: 100%;
+}
+
+.baseContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex: auto;
+}
+
+.baseContainer input, select{
+    padding: 0.30rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--secondaryColor);
+    width: 100%;
+}
+
+.baseContainer h2{
+    padding: 1rem;
+}
+
+.inputContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 401px){
+
+    .inputContainer{
+        flex-direction: row;
+    }
+
+    .inputContainer div {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .baseContainer{
+        gap: 1rem;
+    }
+
+    .perfilMain {
+        display: flex;
+    }
+
+    button {
+        width: 8rem;
+    }
+    
+}

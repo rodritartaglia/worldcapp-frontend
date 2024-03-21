@@ -1,0 +1,210 @@
+nav {
+  width: auto;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: white;
+  border: 2px solid var(--altSecondaryColor);
+  border-radius: 5px;
+  margin-block: 2%;
+  max-width: 1048px;
+  min-width: 678px;
+}
+
+
+.card-header {
+  display: flex;
+  background-color: var(--tertiaryColor);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header>* {
+  padding: 8px;
+  color: white;
+}
+
+
+.card-header card-right {
+  display: flex;
+  align-items: center;
+}
+
+.card-right>* {
+  font-size: 30px;
+}
+
+.figuritas-number {
+  padding-bottom: 20px;
+}
+
+.player-name {
+  margin-left: 8px;
+  font-family: 'El Messiri';
+  font-size: 2em;
+  font-style: bold;
+}
+
+.owner {
+  font-family: 'El Messiri';
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.height-icon {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  width: 20px;
+}
+
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.player-photo {
+  border-radius: 2%;
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  max-width: max-content;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex: auto;
+}
+
+.icon-info {
+  display: flex;
+  align-items: center;
+}
+
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-body>* {
+  padding: 10px;
+  width: 50%;
+}
+
+.card-footer {
+  border-top: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.card-footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'El Messiri';
+  font-weight: bold;
+}
+
+/* 
+  Tablet horizontal
+*/
+@media (max-width: 768px) {
+
+  /* CSS */
+  .card-container {
+    width: 95%;
+    max-width: auto;
+    min-width: auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .card-container {
+    width: 100%;
+    margin-block: 0;
+    border: none;
+    border-radius: 0px;
+    max-width: auto;
+    min-width: auto;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .card-left {
+    padding: 0%;
+  }
+
+  .card-right {
+    flex-direction: row;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body>* {
+    width: 100%;
+  }
+
+  .player-name {
+    font-size: 3.2em;
+  }
+
+  .owner {
+    font-size: 1.5em;
+  }
+
+  .player-photo {
+    width: 90%;
+    align-self: center;
+  }
+
+  .figuritas-number {
+    font-size: 2.5em;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    align-items: flex-start
+  }
+
+  p{
+    padding-block: 1rem;
+  }
+
+}

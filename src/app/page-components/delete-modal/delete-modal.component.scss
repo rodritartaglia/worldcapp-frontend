@@ -1,0 +1,77 @@
+:host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fullContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outBox {
+    background-color: rgba($color: #000000, $alpha: .5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.mainBox {
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--spiky-corners);
+
+    span {
+        font-size: 1.5rem;
+        border-bottom: 1px solid var(--secondaryColor);
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.25rem;
+        border-bottom: 1px solid var(--secondaryColor);
+        padding: 1rem 0;
+    }
+
+    div {
+        display: flex;
+        margin-top: 1.5rem;
+        justify-content: space-evenly;
+
+        button {
+            color: white;
+        }
+
+        button:first-child {
+            background-color: var(--primaryColor);
+            color: var(--secondaryColor);
+        }
+
+        button:first-child:hover {
+            background-color: var(--altPrimaryColor);
+        }
+
+        button:last-child {
+            background-color: var(--secondaryColor);
+        }
+
+        button:last-child:hover {
+            background-color: var(--altSecondaryColor);
+        }
+    }
+}

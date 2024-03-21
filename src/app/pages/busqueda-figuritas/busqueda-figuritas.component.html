@@ -1,0 +1,10 @@
+<app-search-bar (notificarCambio)="getFiguritas()" [valorABuscar]="null"></app-search-bar>
+<main>
+    <app-filtro-busqueda-figuritas (notificarCambio)="getFiguritas()"></app-filtro-busqueda-figuritas>
+    <section class="cardGrid">
+        <app-figurita [eliminable]="false" [cedida]="true" *ngFor="let figurita of figuritas" 
+        [figuritaDTO]="figurita"
+        (click)="verFigurita(figurita)">
+    </app-figurita>
+    </section>
+</main>

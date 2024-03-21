@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda de figuritas para agregar al perfil</title>
+    <link rel="stylesheet" href="css/GlobalStyles.css">
+    <link rel="stylesheet" href="css/stylesBusquedaFiguritasParaPerfil.css">
+    <link rel="stylesheet" href="css/stylesBusquedaFigurita.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+</head>
+
+<body>
+    <header class="navHeader">
+        <h1>WorldCApp</h1>
+        <nav class="navbarDesktop">
+            <ul>
+                <li><a href="busquedaFiguritas.html">Figuritas</a></li>
+                <li><a href="busquedaSobres.html">Sobres</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="login.html"><i class="fi fi-rr-exit"></i></a></li>
+            </ul>
+        </nav>
+        <nav class="navbarMobile">
+            <i class="fi fi-rr-menu-burger"></i>
+        </nav>
+    </header>
+    <header class="searchBarHeader">
+        <div class="searchBar">
+            <input type="text" placeholder="Buscar">
+            <i class="fi fi-rr-search"></i>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="asideContainer">
+                <span class="asideTitle">Filtros</span>
+                <div class="filtersList">
+                    <span>Valoración</span>
+                    <div class="range">
+                        <div class="from">
+                            <input type="number" placeholder="Desde">
+                        </div>
+                        <p>-</p>
+                        <div class="to">
+                            <input type="number" placeholder="Hasta">
+                        </div>
+                    </div>
+                    <div class="checkboxes">
+                        <div class="checkboxItem">
+                            <input id="onFire" type="checkbox">
+                            <label for="onFire">OnFire</label>
+                        </div>
+                        <div class="checkboxItem">
+                            <input id="promesa" type="checkbox">
+                            <label for="promesa">Promesa</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="cardGrid">
+            <div class="card">
+                <img class="playerImage" src="images/player.jpg">
+                <div class="playerInfo">
+                    <div class="name">
+                        <span>Lionel Andrés Messi</span>
+                        <div class="cardNumber">
+                            <i class="fi fi-sr-book-user"></i>
+                            <span>5</span>
+                        </div>
+                        <div class="state">
+                            <i class="fi fi-sr-fire-flame-curved"></i>
+                            <i class="fi fi-sr-trophy"></i>
+                            <div class="grading">
+                                <i class="fi fi-sr-star"></i>
+                                <span>124</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contexture">
+                        <div class="weight">
+                            <i class="fi fi-rr-scale"></i>
+                            <span><strong>Peso:</strong> 72kg</span>
+                        </div>
+                        <div class="height">
+                            <img src="images/height.png">
+                            <span><strong>Altura:</strong> 1.7m</span>
+                        </div>
+                    </div>
+                    <div class="generalInfo">
+                        <span><strong>Casaca:</strong> 10</span>
+                        <span><strong>Nacimiento:</strong> 24/06/1987 (36 años)</span>
+                        <span><strong>Selección:</strong> Argentina</span>
+                        <span><strong>Posición:</strong> Delantero</span>
+                    </div>
+                    <div class="price">
+                        <span>Cotización<strong> USD 80.000.000</strong></span>
+                    </div>
+                    <div class="cedidaPor">
+                        <span> Cedida por Perrito123 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="playerImage" src="images/player.jpg">
+                <div class="playerInfo">
+                    <div class="name">
+                        <span>Lionel Andrés Messi</span>
+                        <div class="cardNumber">
+                            <i class="fi fi-sr-book-user"></i>
+                            <span>5</span>
+                        </div>
+                        <div class="state">
+                            <i class="fi fi-sr-trophy"></i>
+                            <div class="grading">
+                                <i class="fi fi-sr-star"></i>
+                                <span>124</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contexture">
+                        <div class="weight">
+                            <i class="fi fi-rr-scale"></i>
+                            <span><strong>Peso:</strong> 72kg</span>
+                        </div>
+                        <div class="height">
+                            <img src="images/height.png">
+                            <span><strong>Altura:</strong> 1.7m</span>
+                        </div>
+                    </div>
+                    <div class="generalInfo">
+                        <span><strong>Casaca:</strong> 10</span>
+                        <span><strong>Nacimiento:</strong> 24/06/1987 (36 años)</span>
+                        <span><strong>Selección:</strong> Argentina</span>
+                        <span><strong>Posición:</strong> Delantero</span>
+                    </div>
+                    <div class="price">
+                        <span>Cotización<strong> USD 80.000.000</strong></span>
+                    </div>
+                    <div class="cedidaPor">
+                        <span> Cedida por Perrito123 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="playerImage" src="images/player.jpg">
+                <div class="playerInfo">
+                    <div class="name">
+                        <span>Lionel Andrés Messi</span>
+                        <div class="cardNumber">
+                            <i class="fi fi-sr-book-user"></i>
+                            <span>5</span>
+                        </div>
+                        <div class="state">
+                            <i class="fi fi-sr-fire-flame-curved"></i>
+                            <div class="grading">
+                                <i class="fi fi-sr-star"></i>
+                                <span>124</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contexture">
+                        <div class="weight">
+                            <i class="fi fi-rr-scale"></i>
+                            <span><strong>Peso:</strong> 72kg</span>
+                        </div>
+                        <div class="height">
+                            <img src="images/height.png">
+                            <span><strong>Altura:</strong> 1.7m</span>
+                        </div>
+                    </div>
+                    <div class="generalInfo">
+                        <span><strong>Casaca:</strong> 10</span>
+                        <span><strong>Nacimiento:</strong> 24/06/1987 (36 años)</span>
+                        <span><strong>Selección:</strong> Argentina</span>
+                        <span><strong>Posición:</strong> Delantero</span>
+                    </div>
+                    <div class="price">
+                        <span>Cotización<strong> USD 80.000.000</strong></span>
+                    </div>
+                    <div class="cedidaPor">
+                        <span> Cedida por Perrito123 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="playerImage" src="images/player.jpg">
+                <div class="playerInfo">
+                    <div class="name">
+                        <span>Lionel Andrés Messi</span>
+                        <div class="cardNumber">
+                            <i class="fi fi-sr-book-user"></i>
+                            <span>5</span>
+                        </div>
+                        <div class="state">
+                            <div class="grading">
+                                <i class="fi fi-sr-star"></i>
+                                <span>124</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contexture">
+                        <div class="weight">
+                            <i class="fi fi-rr-scale"></i>
+                            <span><strong>Peso:</strong> 72kg</span>
+                        </div>
+                        <div class="height">
+                            <img src="images/height.png">
+                            <span><strong>Altura:</strong> 1.7m</span>
+                        </div>
+                    </div>
+                    <div class="generalInfo">
+                        <span><strong>Casaca:</strong> 10</span>
+                        <span><strong>Nacimiento:</strong> 24/06/1987 (36 años)</span>
+                        <span><strong>Selección:</strong> Argentina</span>
+                        <span><strong>Posición:</strong> Delantero</span>
+                    </div>
+                    <div class="price">
+                        <span>Cotización<strong> USD 80.000.000</strong></span>
+                    </div>
+                    <div class="cedidaPor">
+                        <span> Cedida por Perrito123 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="playerImage" src="images/player.jpg">
+                <div class="playerInfo">
+                    <div class="name">
+                        <span>Lionel Andrés Messi</span>
+                        <div class="cardNumber">
+                            <i class="fi fi-sr-book-user"></i>
+                            <span>5</span>
+                        </div>
+                        <div class="state">
+                            <i class="fi fi-sr-fire-flame-curved"></i>
+                            <div class="grading">
+                                <i class="fi fi-sr-star"></i>
+                                <span>124</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contexture">
+                        <div class="weight">
+                            <i class="fi fi-rr-scale"></i>
+                            <span><strong>Peso:</strong> 72kg</span>
+                        </div>
+                        <div class="height">
+                            <img src="images/height.png">
+                            <span><strong>Altura:</strong> 1.7m</span>
+                        </div>
+                    </div>
+                    <div class="generalInfo">
+                        <span><strong>Casaca:</strong> 10</span>
+                        <span><strong>Nacimiento:</strong> 24/06/1987 (36 años)</span>
+                        <span><strong>Selección:</strong> Argentina</span>
+                        <span><strong>Posición:</strong> Delantero</span>
+                    </div>
+                    <div class="price">
+                        <span>Cotización<strong> USD 80.000.000</strong></span>
+                    </div>
+                    <div class="cedidaPor">
+                        <span> Cedida por Perrito123 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="playerImage" src="images/player.jpg">
+                <div class="playerInfo">
+                    <div class="name">
+                        <span>Lionel Andrés Messi</span>
+                        <div class="cardNumber">
+                            <i class="fi fi-sr-book-user"></i>
+                            <span>5</span>
+                        </div>
+                        <div class="state">
+                            <i class="fi fi-sr-fire-flame-curved"></i>
+                            <i class="fi fi-sr-trophy"></i>
+                            <div class="grading">
+                                <i class="fi fi-sr-star"></i>
+                                <span>124</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contexture">
+                        <div class="weight">
+                            <i class="fi fi-rr-scale"></i>
+                            <span><strong>Peso:</strong> 72kg</span>
+                        </div>
+                        <div class="height">
+                            <img src="images/height.png">
+                            <span><strong>Altura:</strong> 1.7m</span>
+                        </div>
+                    </div>
+                    <div class="generalInfo">
+                        <span><strong>Casaca:</strong> 10</span>
+                        <span><strong>Nacimiento:</strong> 24/06/1987 (36 años)</span>
+                        <span><strong>Selección:</strong> Argentina</span>
+                        <span><strong>Posición:</strong> Delantero</span>
+                    </div>
+                    <div class="price">
+                        <span>Cotización<strong> USD 80.000.000</strong></span>
+                    </div>
+                    <div class="cedidaPor">
+                        <span> Cedida por Perrito123 </span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <i class="fi fi-rr-copyright"></i>
+        <span>WorldCApp / 2023</span>
+    </footer>
+
+    <!-- </div> -->
+
+</body>
+
+</html>

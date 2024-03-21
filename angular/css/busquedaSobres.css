@@ -1,0 +1,153 @@
+.checkboxList {
+    margin-top: 5%;
+}
+
+.checkboxItem input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--primaryFontColor);
+    appearance: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.checkboxItem input:hover {
+    background-color: var(--altSecondaryColor);
+}
+
+.checkboxItem input:checked {
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+
+
+.card {
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card span {
+    font-weight: 800;
+}
+
+.cardTitle {
+    display: flex;
+    background-color: var(--tertiaryColor);
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 14px 14px 0 0;
+}
+
+.cardTitle h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.65rem;
+}
+
+.cardTitle i::before {
+    font-size: 1.5rem;
+    width: auto;
+    color: white;
+    vertical-align: middle;
+}
+
+.locationText {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.stockText {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stockText div {
+    border-right: 1px solid rgb(154, 154, 154, 0.75);
+    width: 50%;
+    padding: 1rem;
+}
+
+.stockText>span {
+    align-self: center;
+    width: 50%;
+    text-align: center;
+}
+
+.priceText {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.priceText span {
+    color: var(--primaryColor);
+    margin-left: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 401px) {
+
+    
+    
+    .checkboxList {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2.5% 0;
+        width: 100%;
+    }
+
+    .checkboxItem {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkboxItem label {
+        display: block;
+
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .checkboxList {
+        flex-direction: column;
+        padding: 1rem;
+        padding-top: 0rem;
+    }
+
+
+    .priceText {
+        font-size: 1.25rem;
+    }
+
+}

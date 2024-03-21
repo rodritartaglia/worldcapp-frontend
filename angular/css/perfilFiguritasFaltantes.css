@@ -1,0 +1,10 @@
+.opcionesPerfil span:last-child {
+    color: var(--secondaryColor);
+    border-bottom: 3px solid var(--secondaryColor);
+    height: 100%;
+}
+
+.opcionesPerfil span:nth-child(2) {
+    color: white;
+    border-bottom: none;
+}

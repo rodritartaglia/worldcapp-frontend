@@ -1,0 +1,87 @@
+:host {
+    flex-grow: 1;
+}
+
+.cardGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    flex: 1;
+    gap: 30px;
+    // margin: 20px;
+}
+
+.checkboxList {
+    margin-top: 5%;
+}
+
+// .checkboxItem input {
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     vertical-align: middle;
+//     border: 2px solid var(--primaryFontColor);
+//     appearance: none;
+//     margin: 10px;
+//     cursor: pointer;
+// }
+
+// .checkboxItem input:hover {
+//     background-color: var(--altSecondaryColor);
+// }
+
+// .checkboxItem input:checked {
+//     background-color: var(--primaryColor);
+//     border-color: var(--primaryColor);
+// }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 401px) {
+
+    
+    
+    .checkboxList {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2.5% 0;
+        width: 100%;
+    }
+
+    .checkboxItem {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkboxItem label {
+        display: block;
+
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .checkboxList {
+        flex-direction: column;
+        padding: 1rem;
+        padding-top: 0rem;
+    }
+
+
+    .priceText {
+        font-size: 1.25rem;
+    }
+
+}

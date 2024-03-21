@@ -1,0 +1,140 @@
+:host {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 80%;
+}
+
+.fotoUsuario{
+    width:10rem;
+    border-radius: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+a{
+    color:inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+}
+
+.opcionesPerfil {
+    background-color: var(--secondaryColor);
+    height: var(--bar-height);
+    z-index: 10;
+    justify-content: space-around;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.opcionesPerfil span {
+    display: flex;
+    align-items: center;
+}
+
+.opcionesPerfil span:hover {
+    color: var(--altSecondaryColor);
+    cursor: pointer;
+}
+
+.infoUsuario{
+    color: white;
+    text-shadow: 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1rem;
+    height: auto;
+    background-color: #004d91;
+    padding: 1rem;
+    font-weight: 700;
+    text-align: center;
+    
+    h3 {
+        margin-block: 20px;
+    }
+}
+
+.infoUsuarioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoUsuario{
+    border: 2px solid var(--secondaryColor);
+    box-shadow: 0px 0px 10px black;
+}
+
+.opcionesPerfil span:first-child {
+    height: 100%;
+}
+
+// .baseContainer {
+//     color: white;
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 1rem;
+//     flex: auto;
+// }
+
+// .baseContainer input, select{
+//     padding: 0.30rem;
+//     border-radius: 0.5rem;
+//     border: 2px solid var(--secondaryColor);
+//     width: 100%;
+// }
+
+// .baseContainer h2{
+//     padding: 1rem;
+// }
+
+@media (min-width: 769px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main{
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    .infoUsuario{
+        width: 20%;
+    }
+
+    .infoUsuarioContainer {
+        position: sticky;
+        top: calc(var(--bar-height) + 20px);
+    }
+
+    .perfilMain {
+        flex-direction: column;
+        width: 80%;
+    }    
+
+    // .baseContainer{
+    //     gap: 1rem;
+    // }
+
+    .perfilMain {
+        display: flex;
+    }
+
+    button {
+        width: 8rem;
+    }
+    
+}

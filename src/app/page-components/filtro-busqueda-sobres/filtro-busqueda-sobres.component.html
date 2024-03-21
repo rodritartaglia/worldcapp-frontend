@@ -1,0 +1,19 @@
+<aside>
+    <div class="asideContainer">
+        <span class="asideTitle">Ordenar Por</span>
+        <div class="checkboxList">
+            <div class="checkboxItem">
+                <input type="radio" name="ordenarPor" id="menorDistancia" (click)="ordenarMenorDistancia()" checked="true">
+                <label for="menorDistancia">Menor distancia</label>
+            </div>
+            <div class="checkboxItem">
+                <input type="radio" name="ordenarPor" id="masBarato" (click)="ordenarMasBarato()">
+                <label for="masBarato">Más barato</label>
+            </div>
+            <div class="checkboxItem">
+                <input type="radio" name="ordenarPor" id="masSobres" (click)="ordenarMasSobres()">
+                <label for="masSobres">Más sobres</label>
+            </div>
+        </div>
+    </div>
+</aside>

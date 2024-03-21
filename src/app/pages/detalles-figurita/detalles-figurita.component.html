@@ -1,0 +1,72 @@
+<div class="body">
+    <div class="card-container">
+      <div class="card-header">
+        <div class="card-header card-left">
+          <h1 class="player-name"> <strong>{{figurita.nombre}}</strong></h1>
+          <p class="owner">(De {{figurita.cedidaPor.nombreUsuario}})</p>
+        </div>
+        <div class="card-header card-right">
+          <i class="fi fi-rr-fire-flame-curved" *ngIf="figurita.onFire"></i>
+          <i class="fi fi-sr-trophy" *ngIf="figurita.promesa"></i>
+          <i class="fi fi-sr-book-user"></i>
+          <h1 class="figuritas-number">5</h1>
+        </div>
+      </div>
+      <div class="card-body">
+        <img src="../../../assets/player.jpg" class="player-photo" />
+        <div class="card-info">
+          <div class="row">
+            <div class="icon-info">
+              <i class="fi fi-rr-scale" style="margin-right: 10px;"></i>
+              <p><b>Peso </b>{{figurita.peso}}</p>
+            </div>
+            <div class="icon-info">
+              <img src="../../../assets/height.png" class="height-icon">
+            <p><b>Altura</b> {{figurita.altura}}m</p>
+            </div>
+            
+          </div>
+
+          <div class="row">
+            <p><b>Nacimiento</b> {{figurita.fechaDeNacimiento}} </p>
+          </div>
+
+          <div class="row">
+            <p><b>Casaca</b> {{figurita.nroCamiseta}}</p>
+            <p><b>Selección</b> {{figurita.seleccion}} ( <i class="fi fi-rr-trophy"></i> 3 )</p>
+          </div>
+
+          <div class="row">
+            <p><b>Año debut</b> {{figurita.debut}}</p>
+            <p>{{figurita.confederacion}} (<i class="fi fi-rr-trophy"></i>10)</p>
+          </div>
+
+          <div class="row">
+            <p><b>Posición</b> {{figurita.posicion}}</p>
+            <div *ngIf="[figurita.esLider]; else noEsLiderBlock">
+              <p><b>Es lider</b></p>
+            </div>
+              <ng-template #noEsLiderBlock> <p><b>No es lider</b></p> </ng-template>
+          </div>
+
+          <div class="row">
+            <h2><b>Cotización USD {{figurita.cotizacion | currency}}</b></h2>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+          <p><b>Nivel de impresión</b> {{figurita.nivelDeImpresion}} </p>
+          <p><b>Valoración Base</b> {{figurita.valoracionBase | number: '1.0' }} </p>
+        </div>
+        <div class="row">
+          <h2>Valoración Total {{figurita.valoracion}}</h2>
+        </div>
+
+        <div class="card-buttons">
+          <a href="" [routerLink]="['/main/busquedaFiguritas']"><button class="secondary-button">Volver</button></a>
+          <button class="primary-button" (click)="solicitar()" >Solicitar</button>
+        </div>
+      </div>
+    </div>
+  </div>

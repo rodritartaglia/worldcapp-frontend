@@ -1,0 +1,23 @@
+footer{
+    height: var(--bar-height);
+    position: sticky;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--altSecondaryColor);
+    color: white;
+}
+
+footer span {
+    font-family: 'Rowdies', cursive;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    font-weight: 700; /* esto pone la negrita*/
+}
+
+footer i::before {
+    vertical-align: middle;
+    font-size: 1.15rem;
+}

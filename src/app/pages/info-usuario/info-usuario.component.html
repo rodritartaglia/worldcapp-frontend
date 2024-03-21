@@ -1,0 +1,20 @@
+<main>
+    <header class="infoUsuario">
+        <div class="infoUsuarioContainer">
+            <img class="fotoUsuario" src="{{usuario.avatarUrl}}" alt="">
+            <h3>{{usuario.nombreCompleto}}</h3>
+            <span><strong>Edad: </strong>{{usuario.edad}}</span>
+            <span><strong>Ubicación: </strong>{{usuario.ubicacion}}</span>
+        </div>
+    </header>
+    <section class="perfilMain">
+        <nav class="opcionesPerfil">
+            <span><a [routerLink]="['formulario']" >Información del perfil</a></span>
+            <span><a [routerLink]="['figuritasRepetidas']" >Figuritas Repetidas</a></span>
+            <span><a [routerLink]="['figuritasFaltantes']" >Figuritas Faltantes</a></span>
+        </nav>
+
+        <router-outlet></router-outlet>
+        
+    </section>
+</main>

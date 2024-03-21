@@ -1,0 +1,44 @@
+<div class="card">
+    <img class="playerImage" src="/assets/player.jpg">
+    <i class="fi fi-rr-trash" *ngIf="eliminable" (click)="activateModal()"></i>
+    <div class="playerInfo">
+        <div class="name">
+            <span>{{figuritaDTO.nombre}}</span>
+            <div class="cardNumber">
+                <i class="fi fi-sr-book-user"></i>
+                <span>{{figuritaDTO.numero}}</span>
+            </div>
+            <div class="state">
+                <i class="fi fi-sr-trophy"></i>
+                <div class="grading">
+                    <i class="fi fi-sr-star"></i>
+                    <span>{{figuritaDTO.valoracion}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="contexture">
+            <div class="weight">
+                <i class="fi fi-rr-scale"></i>
+                <!-- verificar el tema de un pipe para el peso -->
+                <span><strong>Peso:</strong> {{ figuritaDTO.peso | number }}</span>
+            </div>
+            <div class="height">
+                <img src="assets/height.png">
+                <!-- verificar el tema de un pipe para el tamanio -->
+                <span><strong>Altura:</strong> {{ figuritaDTO.altura | number }}</span>
+            </div>
+        </div>
+        <div class="generalInfo">
+            <span><strong>Casaca:</strong> {{ figuritaDTO.nroCamiseta }} </span>
+            <span><strong>Nacimiento:</strong> {{figuritaDTO.fechaDeNacimiento | date: "dd/MM/YY" }} </span>
+            <span><strong>Selección:</strong> {{ figuritaDTO.seleccion }}</span>
+            <span><strong>Posición:</strong> {{ figuritaDTO.posicion }}</span>
+        </div>
+        <div class="price">
+            <span>Cotización<strong> {{ figuritaDTO.cotizacion | currency }}</strong></span>
+        </div>
+        <div class="cedidaPor" *ngIf="cedida">
+            <span> Cedida por {{figuritaDTO.cedidaPor.nombreUsuario}}</span>
+        </div>
+    </div>
+</div>

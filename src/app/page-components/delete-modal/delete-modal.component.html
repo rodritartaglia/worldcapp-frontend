@@ -1,0 +1,11 @@
+<div class="fullContainer">
+    <b class="outBox" (click)="deactivateModal()"></b>
+    <div class="mainBox">
+        <span>Eliminar figurita</span>
+        <p>¿Esta seguro que desea eliminar la figurita {{id}}?</p>
+        <div>
+            <button (click)="deactivateModal()">Cancelar</button>
+            <button (click)="deleteCard()">Aceptar</button>
+        </div>
+    </div>
+</div>

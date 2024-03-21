@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/perfilBase.css" rel="stylesheet" />
+    <link href="css/perfilUsuario.css" rel="stylesheet" />
+    <link href="css/GlobalStyles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <title>Informacion Perfil</title>
+</head>
+
+<body>
+    <div class="main-layout">
+        <header class="navHeader">
+            <h1>WorldCApp</h1>
+            <nav class="navbarDesktop">
+                <ul>
+                    <li><a href="busquedaFiguritas.html">Figuritas</a></li>
+                    <li><a href="busquedaSobres.html">Sobres</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="login.html"><i class="fi fi-rr-exit"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="navbarMobile">
+                <i class="fi fi-rr-menu-burger"></i>
+            </nav>
+        </header>
+        <main>
+            <header class="infoUsuario">
+                <div class="infoUsuarioContainer">
+                    <img class="fotoUsuario" src="images/perrito.png" alt="">
+                    <h3>Perrito 123</h3>
+                    <span><strong>Edad:</strong> 84 años (12 caninos) </span>
+                    <span><strong>Ubicación:</strong> San Bernardo</span>
+                </div>
+            </header>
+            <section class="perfilMain">
+                <nav class="opcionesPerfil">
+                    <span><a href="perfil.html">Información del perfil</a></span>
+                    <span><a href="perfilFiguritasRepetidas.html">Figuritas Repetidas</a></span>
+                    <span><a href="perfilFiguritasFaltantes.html">Figuritas Faltantes</a></span>
+                </nav>
+                <div class="baseContainer">
+                    <h2>Información General</h2>
+                    <div class="inputContainer">
+                        <div>
+                            <label for="nombrePerfil">Nombre</label>
+                            <input type="text" name="" id="nombrePerfil">
+                        </div>
+                        <div>
+                            <label for="apellidoPerfil">Apellido</label>
+                            <input type="text" name="" id="apellidoPerfil">
+                        </div>
+                    </div>
+                    <div class="inputContainer">
+                        <div>
+                            <label for="mailPerfil">Correo Electrónico</label>
+                            <input type="text" name="" id="mailPerfil">
+                        </div>
+                        <div>
+                            <label for="fechaPerfil">Fecha de Nacimiento</label>
+                            <input type="date" name="" id="fechaPerfil">
+                        </div>
+                    </div>
+                    <h2>Dirección</h2>
+                    <div class="inputContainer">
+                        <div>
+                            <label for="provincia">Provincia</label>
+                            <select name="" id="provincia">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="localidad">Localidad</label>
+                            <select name="" id="localidad">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputContainer">
+                        <div>
+                            <label for="callePerfil">Calle</label>
+                            <input type="text" name="" id="callePerfil">
+                        </div>
+                        <div>
+                            <label for="altura">Altura</label>
+                            <input type="number" name="" id="altura">
+                        </div>
+                    </div>
+                    <h2>Criterio de Cambio</h2>
+                    <div class="inputContainer">
+                        <div>
+                            <label for="criterio">Criterio de Cambio</label>
+                            <select name="" id="criterio">
+                                <option value="">a</option>
+                                <option value="">b</option>
+                                <option value="">c</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="secondary-button">Descartar</button>
+                        <button class="primary-button">Guardar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <i class="fi fi-rr-copyright"></i>
+            <span>WorldCApp / 2023</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>

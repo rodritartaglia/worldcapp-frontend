@@ -1,0 +1,7 @@
+<app-search-bar (notificarCambio)="getPuntosDeVenta()" [valorABuscar]="null"></app-search-bar>
+<main>
+    <app-filtro-busqueda-sobres></app-filtro-busqueda-sobres>
+    <section class="cardGrid">
+        <app-punto-de-venta *ngFor="let puntoDeVenta of sortedPuntosDeVenta" [puntoDeVenta]="puntoDeVenta"></app-punto-de-venta>
+    </section>
+</main>

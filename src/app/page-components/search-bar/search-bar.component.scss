@@ -1,0 +1,37 @@
+.searchBarHeader {
+    background-color: var(--secondaryColor);
+    padding: 1rem;
+    height: var(--bar-height);
+    font-weight: 700;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar input {
+    height: var(--input-height);
+    padding: 0.75rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+
+.searchBar input:focus {
+    outline: none;
+}
+
+.searchBar i::before {
+    width: auto;
+    font-size: 1.25rem;
+    background-color: var(--altPrimaryColor);
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    vertical-align: middle;
+}

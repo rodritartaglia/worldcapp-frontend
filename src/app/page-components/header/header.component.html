@@ -1,0 +1,23 @@
+<header class="navHeader">
+    <div class="logo">
+        <img src="/assets/logo.png" alt="">
+        <h1><a href="" [routerLink]="['/main/busquedaFiguritas']">WorldCApp</a></h1>
+    </div>
+    <nav class="navbarDesktop">
+        <ul>
+            <li><a href="" [routerLink]="['/main/busquedaFiguritas']">Figuritas</a></li>
+            <li><a href="" [routerLink]="['/main/busquedaSobres']">Sobres</a></li>
+            <li><a href="" [routerLink]="['/main/infoUsuario/formulario']">Perfil</a></li>
+            <li><a href="" (click)="cerrarSesion()"><i class="fi fi-rr-exit"></i></a></li>
+        </ul>
+    </nav>
+    <nav class="navbarMobile">
+        <i class="fi fi-rr-menu-burger" (click)="toggleNav()"></i>
+        <ul *ngIf="isOpen" (click)="toggleNav()">
+            <li><a href="" [routerLink]="['/main/busquedaFiguritas']">Figuritas</a></li>
+            <li><a href="" [routerLink]="['/main/busquedaSobres']">Sobres</a></li>
+            <li><a href="" [routerLink]="['/main/infoUsuario/formulario']">Perfil</a></li>
+            <li><a href="" (click)="cerrarSesion()">Salir</a></li>
+        </ul>
+    </nav>
+</header>

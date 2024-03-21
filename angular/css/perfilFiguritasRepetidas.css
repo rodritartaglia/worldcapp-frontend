@@ -1,0 +1,163 @@
+.opcionesPerfil span:nth-child(2) {
+    color: var(--secondaryColor);
+    border-bottom: 3px solid var(--secondaryColor);
+    height: 100%;
+}
+
+
+.baseContainer {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cambio importante */
+    flex: 1;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.sticker:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: var(--secondaryColor) solid;
+    border-radius: 1rem;
+}
+
+.playerImage {
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    aspect-ratio: 1/1;
+}
+
+.sticker>i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.sticker>i:hover {
+    color: var(--primaryColor);
+}
+
+
+.playerInfo {
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name>span {
+    max-width: 50%;
+}
+
+.stickerNumber,.state, .grading {
+    display: flex;
+    gap: 2px;
+}
+
+.contexture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    border-bottom: solid 1px;
+}
+
+.height img {
+    width: 20px;
+}
+
+.generalInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+.price, .cedidaPor {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.addCard {
+    position: fixed;
+    background-color: var(--secondaryColor);
+    bottom: 10px;
+    right: 10px;
+    width: 3rem;
+    height: 3rem;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.addCard i::before {
+    text-align: center;
+    vertical-align: middle;
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 401px) {
+    .baseContainer {
+        margin: 30px;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .baseContainer {
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .addCard {
+        position: static;
+        background-color: rgba(255, 255, 255, 0.3);
+        bottom: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+        z-index: auto;
+        border-radius: 1rem;
+    }
+
+    .addCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        outline: var(--secondaryColor) 3px solid;
+        border-radius: 1rem;
+    }
+
+    .addCard i::before {
+        color: var(--secondaryColor);
+        opacity: 0.5;
+        font-size: 5rem;
+    }
+
+    .addCard:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}

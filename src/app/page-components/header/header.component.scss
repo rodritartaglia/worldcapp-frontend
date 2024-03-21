@@ -1,0 +1,113 @@
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--altSecondaryColor);
+    padding: 1rem 2rem;
+    color: white;
+    height: var(--bar-height);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.navHeader i {
+    cursor: pointer;
+}
+
+.navHeader a:hover {
+    color: var(--primaryColor);
+}
+
+.navHeader h1 {
+    text-shadow: 2px 2px black;
+}
+
+.navHeader i::before {
+    font-size: 1.75rem;
+    vertical-align: middle;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+        width: 60px;
+        filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.5));
+    }
+}
+
+.navbarDesktop {
+    display: none;
+}
+
+.navbarDesktop a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.navbarMobile {
+
+    ul {
+        position: absolute;
+        list-style: none;
+        width: 100%;
+        left: 0;
+        top: var(--bar-height);
+        background-color: var(--secondaryColor);
+
+        li {
+            padding: 1.25rem;
+            border-top: 2px solid white;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.25rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 769px) {
+    .navHeader {
+        padding: 1rem 2rem;
+    }
+
+    .navbarMobile {
+        display: none;
+    }
+
+    .navbarDesktop {
+        display: block;
+    }
+
+    .navbarDesktop ul {
+        display: flex;
+        list-style: none;
+        gap: 5rem;
+        font-size: 1.25rem;
+    }
+
+    .navbarDesktop li {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
+}

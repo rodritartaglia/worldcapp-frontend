@@ -1,0 +1,297 @@
+:root {
+    --primaryColor: #9E2626;
+    --altPrimaryColor: #680404;
+    --secondaryColor: #daa520;
+    --altSecondaryColor: #B8964C;
+    --tertiaryColor: #7f134f;
+    --altTertiaryColor: #5c0736;
+    --primaryFontColor: black;
+    --bar-height: 75px;
+    --input-height: 40px; /* for now */
+    --max-width-mobile: 400px;
+    --min-width-tablet: 401px;
+    --max-width-tablet: 768px;
+    --min-width-desktop: 769px;
+    --spiky-corners: 1rem 5px 1rem 5px;
+}   
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'El Messiri', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fondo.jpg");
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Mobile */
+
+/* nav = navHeader*/
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondaryColor);
+    padding: 1rem 2rem;
+    color: white;
+    height: var(--bar-height);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+}
+
+.navHeader i{
+    cursor: pointer;
+}
+
+.navHeader a:hover{ 
+    color: var(--primaryColor);
+}
+
+button {
+    padding: 12px 24px;
+    border: 1px solid var(--altSecondaryColor);
+    border-radius: var(--spiky-corners);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navHeader h1 {
+    text-shadow: 2px 2px black ;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Rowdies', cursive;
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+
+
+.asideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-color: var(--secondaryColor);
+    gap: 10px;
+    border-bottom-left-radius: var(--defaultBorderRadius);
+    border-bottom-right-radius: var(--defaultBorderRadius);
+}
+
+.asideTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+
+.navHeader i::before {
+    font-size: 1.75rem;
+    vertical-align: middle;
+}
+
+/* header = searchBarHeader */
+.searchBarHeader {
+    background-color: var(--primaryColor);
+    padding: 1rem;
+    height: var(--bar-height);
+    font-weight: 700;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-layout > main {
+    flex-grow: 1;
+}
+
+.navbarDesktop {
+    display: none;
+}
+
+.navbarDesktop a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar input {
+    height: var(--input-height);
+    padding: 0.75rem;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    width: 75%;
+}
+
+.searchBar input:focus {
+    outline: none;
+}
+
+.searchBar i::before {
+    width: auto;
+    font-size: 1.25rem;
+    background-color: var(--altPrimaryColor);
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.primary-button {
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
+.primary-button:hover{
+    background-color: var(--altPrimaryColor);
+    border: 1px solid var(--altSecondaryColor);
+}
+
+.secondary-button {
+    background-color: white;
+    color: var(--altSecondaryColor);
+}
+
+.secondary-button:hover{
+    background-color: lightgray;
+    color:white;
+}
+
+.checkboxItem input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--primaryFontColor);
+    appearance: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.checkboxItem input:hover {
+    background-color: var(--altSecondaryColor);
+}
+
+.checkboxItem input:checked {
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.cardGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    flex: 1;
+    margin: 20px;
+    gap: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: var(--secondaryColor) 3px solid;
+    border-radius: 1rem;
+}
+
+footer{
+    height: var(--bar-height);
+    position: sticky;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--altPrimaryColor);
+    color: white;
+}
+
+footer span {
+    font-family: 'Rowdies', cursive;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    font-weight: 700; /* esto pone la negrita*/
+}
+
+footer i::before {
+    vertical-align: middle;
+    font-size: 1.15rem;
+}
+
+@media (min-width: 401px) {
+    .cardGrid {
+        gap: 30px;
+        margin: 30px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    .navHeader {
+        padding: 1rem 2rem;
+    }
+
+    .navbarMobile {
+        display: none;
+    }
+
+    .navbarDesktop {
+        display: block;
+    }
+
+    .navbarDesktop ul {
+        display: flex;
+        list-style: none;
+        gap: 5rem;
+        font-size: 1.25rem;
+    }
+
+    .navbarDesktop li {
+        display: flex; 
+        align-items: center;
+    }
+
+    aside {
+        width: 25%;
+        max-width: 30rem;
+        min-width: 17rem;
+    }
+
+    .asideContainer {
+        border-radius: var(--spiky-corners);
+        position: sticky;
+        top: calc(var(--bar-height) + 20px);
+    }
+
+    .cardGrid {
+        gap: 40px;
+        margin: auto;
+        margin-top: 0;
+    }
+
+}

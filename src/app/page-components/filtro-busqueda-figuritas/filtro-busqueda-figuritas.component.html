@@ -1,0 +1,32 @@
+<aside>
+    <div class="asideContainer">
+        <span class="asideTitle">Filtros</span>
+        <div class="filtersList">
+            <span>Valoración</span>
+            <div class="range">
+                <div class="from">
+                    <input type="number" placeholder="Desde" [(ngModel)]="desde">
+                </div>
+                <p>-</p>
+                <div class="to">
+                    <input type="number" placeholder="Hasta" [(ngModel)]="hasta">
+                </div>
+            </div>
+            <div class="checkboxes">
+                <div class="checkboxItem">
+                    <input id="onFire" type="checkbox" [checked]="onFire" (click)="clickOnFire()">
+                    <label for="onFire">OnFire</label>
+                </div>
+                <div class="checkboxItem">
+                    <input id="promesa" type="checkbox" [checked]="promesa" (click)="clickPromesa()">
+                    <label for="promesa">Promesa</label>
+                </div>
+            </div>
+            <div class="space-around" >
+                <button class="filter-button" (click)="clickFilter()"> Filtrar </button>
+                <button class="filter-button" (click)="clickRefresh()"> Limpiar </button>
+            </div>
+        </div>
+        
+    </div>
+</aside>
